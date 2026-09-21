@@ -10,7 +10,7 @@ app.get("/getStudents",(req,res)=>{
 });
 //localhost:3000/updateStudent
 app.put("/updateStudent",(req,res)=>{
-    res.send("update student called");
+    res.send("update student route called");
 })
 //run the server
 app.listen(3000,()=>{
