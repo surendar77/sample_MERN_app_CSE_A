@@ -14,3 +14,4 @@ def updateStudent():
 @app.delete("/deleteStudent")
 def deleteStudent():
     return "delete student method called"
+    
