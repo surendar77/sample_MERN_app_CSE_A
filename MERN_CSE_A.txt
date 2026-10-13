@@ -1,0 +1,1570 @@
+MERN
+
+website => collection of webpages
+webpage => collection of html,css,js components
+
+
+
+Combinations of FSD (web development)
+
+1.React ->  python/FastAPI -> Mongodb/MySQL
+2.React ->  java/Springboot -> Mongodb/MySQL
+3.React ->  nodejs/Expressjs -> Mongodb/MySQL (MERN)
+4.Angular -> nodejs/Expressjs -> Mongodb/MySQL (MEAN)
+
+
+Mobile app FSD combinations
+1.React-native -> nodejs/Expressjs -> Mongodb/MySQL (MEAN)
+2.Flutter -> nodejs/Expressjs -> Mongodb/MySQL (MEAN)
+
+
+css
+  -used to style the tags
+
+
+attribute name : value;
+
+color : red;
+
+font-size : 12px;
+
+background-color:black;
+
+Note: if multi word attribute will be splited by (-) symbol
+
+
+Types of CSS
+  -Inline css (with in the tag)
+    -by style attribute
+     Eg: <h1 style="color:red">
+  -Internal css(with in the page)
+     -by style tag
+         <style>
+           h1{
+             color:red;
+             }
+         </style>
+  -External css(overall project)
+     - by external file with attributes and values
+
+
+
+
+
+
+
+
+
+27/07/2026
+
+Bootstrap
+  - it is a framework to built UI easily
+  - predefined html,css,js
+
+
+
+Go to google
+
+search for bootstrap
+
+
+
+Responsive
+   -it should be applicable in all devices
+
+
+
+
+download 3 images from internet
+
+try to download same size of image
+
+
+
+
+
+
+
+
+30/07/2026
+
+Bootstrap part-II
+    -open last class exercise
+
+Git integration with local machine
+ 
+ -open browser
+   -download git for windows
+        -download standalone x64 installer setup
+once downloaded & install it
+
+open command prompt => git --version
+
+git config --global user.name "surendar77"
+
+git config --gloabl user.email "surenc1690@gmail.com"
+
+git config  --list
+  => then it will display your emailid and username
+
+git init
+
+git commit -m "first commit"
+
+git branch -M main
+
+git add .
+
+git remote add origin https://github.com/utcacademy/sampleweb.git
+
+git push -u origin main
+
+
+
+
+
+
+
+
+
+
+31/07/2026
+
+Javascript
+   -client side scripting
+         -validation with in browser(js)
+   -server side scripting
+         -deal with db(nodejs/expressjs)
+
+
+
+
+
+
+
+
+client side scripting
+    -internal scripting
+       -inside body tag
+        <script>
+
+        </script>
+    -external scripting
+
+
+
+
+
+
+let = can chage the value of variable
+const =can't chage the value of variable
+
+<script>
+
+          let a=20;
+
+          console.log(a);
+
+          a=30;
+
+          console.log(a)
+
+          const pi=3.14;
+
+          console.log(pi)
+
+          pi=4; //error
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function in javascript:
+
+
+
+function funname(parameters){
+
+   statement
+
+ }
+
+
+
+function add(a,b){
+
+               return a+b;
+
+           }
+
+           console.log(add(10,20));
+
+
+
+arrow function => short form of function
+
+              => mostly used in react
+
+
+
+const add = (a,b) => {
+
+       return a+b;
+
+}
+
+
+
+const add= (a,b)=> a+b
+
+
+
+
+
+
+
+const product={
+
+           prodname:"pen",
+
+           prodprice:40.50,
+
+           prodquan:5
+
+       }
+
+       console.log(product)
+
+       console.log(product.prodname)
+
+
+
+
+
+
+
+
+
+arrays in javascript
+
+
+
+const marks=\[50,40,60,80,75]
+
+
+
+
+
+
+
+
+
+
+
+
+
+DOM manipulation:
+
+  Document Object Model
+
+ - it is used interact with html to javascript
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+areaofcircle
+
+
+
+pascal case(AreaOfCircle)=> file,class,package
+
+camel case(areaOfCircle) => function or method
+
+   getElemenyById()
+
+snake case(area\_of\_circle) => variable,folder
+
+
+
+
+
+
+
+
+
+
+
+
+
+create html page with
+
+
+
+one input
+
+  <input type="text" placeholder="Enter name">
+
+one button
+
+  <button > click</button>
+
+one p tag
+
+  <p></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+addEventListener
+
+  -click
+
+  -keyup(textbox)
+
+  -mouseover(mouse)
+
+  -mouseout(mouse)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+
+   document.getElementById("upper")
+
+        .addEventListener("click",()=>{
+
+   let name= document.getElementById("name").value;    document.getElementById("res").innerHTML=name.toUpperCase();
+
+
+
+        })
+
+
+
+
+document.getElementById("upper")
+       .addEventListener("mouseover",()=>{
+         document.getElementById("upper").style.color="red";
+       })
+
+document.getElementById("upper")
+       .addEventListener("mouseout",()=>{
+         document.getElementById("upper").style.color="black";
+       })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ <script>
+    document.getElementById("name")
+       .addEventListener("keyup",()=>{
+        let name=document.getElementById("name").value;
+        document.getElementById("res").innerHTML=name;
+       })
+  </script>
+
+
+
+
+
+
+<input type="text" id="pass" placeholder="Enter password">
+        <div id="valid">
+      <h6 style="color:red;">length must be 8 characters</h6>
+       <h6 style="color:red;">one upper case</h6>
+        <h6 style="color:red;">one lower case</h6>
+         <h6 style="color:red;">one number</h6>
+        </div>
+
+
+
+document.getElementById("pass")
+      .addEventListener("keyup",()=>{
+   let pass_len=document.getElementById("pass").value.length
+   //hide and view entire block
+     if(pass_len>0){
+        document.getElementById("valid").style.display="block";
+       }
+     else{
+        document.getElementById("valid").style.display="none";
+        }
+
+// checking first condition the length is >=8
+if(pass_len>=8){
+        document.getElementById("len_pass").style.color="green";
+    }
+    else{
+       document.getElementById("len_pass").style.color="red";
+    }
+//checking one upper case
+let passw=document.getElementById("pass").value;
+   if(/[A-Z]/.test(passw)){
+    document.getElementById("upper_pass").style.color="green";
+   }else{
+    document.getElementById("upper_pass").style.color="red";
+   }
+      })
+</script>
+
+
+Exercise: PAN card validation  (ABCDE1234C)
+pattern =/^[A-Z]{5}[0-9]{4}[A-Z]$/
+
+
+if(pattern.test(pan))
+
+
+
+
+
+
+
+
+
+
+03/08/2026
+
+Today's topic
+
+-Jquery
+-Todo application using Bootstrap and jquery
+
+
+instructions:
+  open your project folder => create new folder => jquery_ex
+=> create new file index.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Jquery
+   -javascript query
+   -one of the library of javascript
+   -used to reduce the code
+   -it mainly used for dom and event listeners
+
+
+<p id="demo">hai</p>
+//javascript code
+document.getElementById("demo").innerHTML="hello";
+//jquery
+$("#demo").html("hello")
+
+
+	let count=0;
+        $("#btn").click(function(){
+            count++;
+            let name=$("#name").val();
+            $("#res").html(`
+             <h1> welcome, ${name} </h1>
+             <p> you clicked button for ${count} times</p>
+            `)
+        })
+
+
+Create new file => todo.html
+  create basic html code and copy paste the links of bootstrap
+css,icons and jquery links
+
+
+<div class="container mt-5">
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <div class="card">
+         <div class="card-header bg-primary text-white text-center">Todo application</div>
+			<div class="card-body">
+                            <input type="text" id="task"
+                            class="form-control"
+                            placeholder="Enter task">
+                            <br/>
+                            <button id="add"
+                            class="btn btn-success">
+                            Add Task</button>
+                      </div>
+                      <ul id="task-list" class="list-group">
+                       Todolist will come here
+                      </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+ <script>
+
+   $("#add").click(function(){
+     let task=$("#task").val().trim();
+     console.log(task);
+     $("#task-list").append(`
+       <li class="list-group-item d-flex justify-content-between align-items-center">${task}
+        <div>
+
+         <button class="btn btn-success btn-sm complete">
+        <i class="bi bi-check2-circle">
+        </button>
+
+        <button class="btn btn-danger btn-sm delete">
+            <i class="bi bi-trash">
+            </button>
+
+        </div>
+        </li>
+     `);
+
+   })
+
+ </script>
+Project titles:
+CHRONIC KIDNEY DISEASE PREDICTION -M
+
+DATA DUPLICATION FINDING AND ANALYSIS USING CHECKSUM-M
+EBUG TRACKER AND SOLVER APP-E
+KNEE OSTEOARTHRITIS DETECTION AND SEVERITY PREDICTION-M
+MULTI DOWNLOADER USING PEER TO PEER ARCHITECTURE-D
+NYMBLE BLOCKING MISBEHAVING USERS ON ANONAMIZING NETWORKS-D
+
+SECURE FILE STORAGE USING CRYTOGRAPHY-M
+
+
+ZILLOW HOME VALUE PREDICTION-E
+
+
+
+
+Step 1: Create Two Project Folders
+Create the following folders on your local system (Desktop or Documents):
+1. Sample_mern_app
+   └── readme.txt
+
+2. Your_project_name
+   └── readme.txt
+
+Note: Create a readme.txt file inside both folders.
+
+
+Step 2: Create GitHub Repositories
+
+Create two new repositories in your GitHub account:
+
+Sample_mern_app
+Your_project_name
+
+
+Step 3: Submit the Repository Links
+Submit both GitHub repository URLs using the Google Form below:
+	https://tinyurl.com/vignan-cse-a (or) form link shared in whatsapp group
+
+
+
+Step 4: Configure Git Repository
+
+Open Command Prompt inside each project folder and execute the following commands one by one:
+
+git init
+git add .
+git commit -m "First commit"
+git branch -M main
+git remote add origin https://github.com/your-username/your-repository-name.git
+git push -u origin main
+
+Step 4: Submit the Repository Links
+Submit both GitHub repository URLs using the Google Form below:
+	https://tinyurl.com/vignan-cse-a
+
+
+
+
+13/08/2026
+
+1.Github desktop configuration
+    -go to browser download github desktop
+and install it
+
+
+https://github.com/surendar77/sample_mern_app2
+
+https://github.com/surendar77/LMS_Project_CSEA(your project link)
+
+fill the form shared in whatsapp group
+
+
+2.download and configure softwares for project
+
+
+
+Mongodb
+  open browser
+search for mongodb community server download
+
+click on the first link
+
+either select package => choose windows os
+
+
+
+
+
+
+
+click => add new connection
+
+
+[
+{
+"name":"sathya",
+"age":34,
+"height":5.7,
+"dept":"CSE"
+},
+{
+"name":"bala",
+"age":24,
+"height":5.7,
+"dept":"AIML"
+}
+]
+
+
+
+
+
+
+
+
+
+2. download nodejs
+After install
+open cmd
+ node --version
+ npm --version
+
+
+17/08/2026
+
+Today's topic:
+
+mongodb
+  -introduction
+  -queries and functions
+
+note: open mongodb compass
+
+
+Mongodb
+  -NoSQL
+  -in json format(key,value)
+
+
+id	name	phno	dept
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+"stud_id":101,
+"name":"surendar",
+"age":24,
+"gender":"male",
+"dept":"CSE",
+"marks":85,
+"city":"chennai",
+"skills":["python","java","sql"]
+}
+
+like the same create 10 diff records in student_db collection
+
+
+for MSD notes
+
+https://tinyurl.com/vigan-cse-a-notes
+
+
+
+
+
+filter by particular field
+
+{"department":"CSE"}
+
+filter the records age is greater than 21
+
+{"age":{"$gt":21}}
+
+filter the records age is greater than or equal 21
+
+{"age":{"$gte":21}}
+
+filter the records age is less than 21
+
+{"age":{"$lt":21}}
+
+filter the records age is less than or equal 21
+
+{"age":{"$lte":21}}
+
+filter the records age is greater than or eq 21 and less or eq 23
+
+{"age":{"$gte":21,"$lte":24}}
+
+
+filter the records equal to that value
+
+{"age":{"$eq":21}}
+
+filter the records not equal to that value
+
+{"age":{"$ne":21}}
+
+
+
+aggregate functions
+
+    -it is used to perform with multiple documents used to calcuate,summarize and transform data
+
+
+
+$match  => used to filter the data
+
+$group  => used to separate or group documents
+
+$project => used to display certain cols
+
+$sort  => used to sort either ascending or descending order
+
+$limit => display only particular records
+
+$skip  => can skip some amount of records
+
+$count => used to count how many records are there
+
+$sum => used to find total of some col
+
+$min => find min value
+
+$max => find max value
+
+$avg => find average of the col
+
+$unwind => used to split list values
+
+$addFields => can add new key and value
+
+
+
+
+
+
+
+
+db.products.find().forEach(doc=>print(JSON.stringify(doc)))
+
+
+syntax:
+
+
+
+ db.products.aggregate([{agg fun1},{agg fun2},{agg fun3}])
+
+
+$match  => used to filter the data
+
+
+
+db.products.aggregate([{$match:{"brand":"Dell"}}]).forEach(doc=>print(JSON.stringify(doc)))
+
+
+
+$group  => used to separate or group documents
+
+
+
+\\#while writing query next line represent means press shift+enter key
+
+
+db.products.aggregate([
+
+ {
+
+   $group:{_id:"$category"}
+
+ }]
+
+).forEach(doc=>print(JSON.stringify(doc)))
+
+$sum => used to find total of some col
+
+$group  => used to separate or group documents
+
+
+
+db.products.aggregate(
+
+ [
+
+   {$group:{_id:"$category","totalProducts":{$sum:1}}}
+
+ ]
+
+).forEach(doc=>print(JSON.stringify(doc)))
+
+
+
+
+
+$group,$min,$max
+
+
+
+db.products.aggregate([
+
+ {
+
+   $group:{_id:"$category","leastprice":{$min:"$price"},"maxprice":{$max:"$price"}}
+
+ }
+
+]).forEach(doc=>print(JSON.stringify(doc)))
+
+
+
+$group,$min,$max,$sort,$skip
+
+
+
+db.products.aggregate([
+
+ {
+
+   $group:{_id:"$category","leastprice":{$min:"$price"},"maxprice":{$max:"$price"}}
+
+ },
+
+ {$sort:{"maxprice":-1}},
+
+ {$skip:3}
+
+]).forEach(doc=>print(JSON.stringify(doc)))
+
+
+
+
+
+$match,$project,$limit
+
+
+
+db.products.aggregate(
+
+  [
+
+   {$match:{"category":"Laptop"}},
+
+   {$project:{_id:0,name:1,brand:1,price:1}},
+
+   {$limit:2}
+
+ ]  
+
+).forEach(doc=>print(JSON.stringify(doc)))
+
+
+
+Exercise:
+
+in students table
+
+1.match cse students and print only name and age in ascending order by name
+
+2.group gender column and sort by their age in descending
+
+3.group departments and display how many students in each department
+
+4.group departments and display max marks student in each department
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+27/08/2026
+
+Advanced aggregate functions
+
+note:open mongodb compass
+
+
+
+
+
+
+
+
+1. group by category column and need to print particular records in that 
+category and sort by ascending
+
+$push =>used to insert or add record in one particular key
+
+db.products.aggregate([
+  {$group:{_id:"$category",
+    products:{$push:{name:"$name",brand:"$brand",price:"$price"}}}}
+]).forEach(doc=>print(JSON.stringify(doc)))
+
+
+$group,$sort,$sum,$push
+
+db.products.aggregate([
+  {$sort:{"price":1}},
+  {$group:{_id:"$category","totalproducts":{$sum:1},
+    products:{$push:{name:"$name",brand:"$brand",price:"$price"}}}}
+]).forEach(doc=>print(JSON.stringify(doc)))
+
+
+
+
+
+2.display the product details of highest price in each category
+
+$sort,$group,$first
+
+$first => used to print first record among all the records
+
+Query:
+db.products.aggregate([
+  {$sort:{"price":-1}},
+  {$group:{_id:"$category",
+           Highestproduct:{
+      $first:{name:"$name",brand:"$brand",price:"$price"}}}}
+   ])
+
+
+
+
+
+
+$unwind
+   - it is used to split the list values in key
+
+
+db.products.aggregate([
+  {$unwind:"$tags"}
+]).forEach(doc=>print(JSON.stringify(doc)))
+
+
+
+add new field productstatus column by price col if price>=5ok then
+it is premium else it is regular
+
+
+$addField => used to add new field
+$cond  => used to give condition
+
+
+db.products.aggregate([
+  {$addFields:{
+    "productStatus":{
+      $cond:[{$gte:["$price",50000]},'Premium','Regular']
+    }}}
+]).forEach(doc=>print(JSON.stringify(doc)))
+
+Exercise:(in student_db table)
+
+1.match cse students and print only name and age in ascending order by name
+2.group gender column and sort by their age in descending and display name and age
+3.group departments and display how many students in each department
+4.group departments and display students in descending order by marks
+5.add new field pass_status based on marks if mark >=50 then pass
+  else fail
+6.group department and display first mark student in all departments
+
+
+
+31/08/2026
+
+Topic:
+
+NodeJS
+
+open command prompt
+
+node -v
+
+npm -v
+
+
+NodeJs
+ Day01 -Introduction and basics of nodeJs,Functions,modules
+ Day02 -Callback function & async functions
+ Day03 -Creating server using nodeJS
+
+
+Javascript => browser(client side scripting)
+          JS-> browser->chrome,firefox
+nodeJS => server side scripting
+       nodejs ->browser -> OS,backend(database)
+       non-blocking code
+
+
+
+
+
+create new folder nodejs_exp 
+  create new file exp1.js
+
+create a file and run the nodejs
+
+console.log("hello world")
+
+for run the nodejs code
+
+right click on the file -> open in integrated terminal menu
+
+in terminal type the below cmd
+
+node filename.js
+
+eg: node exp1.js
+
+
+basic commands on terminal
+
+#clear previous ouputs in terminal type below command
+
+cls 
+
+#to stop the execution
+
+ctrl + c
+
+
+
+
+
+
+command keywords in nodejs
+
+
+__dirname => it is used to fetch current directory path
+
+__filename => it is used to display filename of current file
+
+
+console.log(__dirname);
+console.log(__filename);
+
+
+
+
+
+variable declaration
+
+
+let => can change the value of variable at runtime
+const => can't chage the value of variable
+var=> same like let only but its outdated
+
+
+
+
+let a=10;
+let b=20;
+console.log("output="+(a+b));
+
+
+arrays in nodejs
+ 
+let names=["surendar","arun","arul"]
+
+
+for command a single or multiple line
+  ctrl + / 
+
+
+
+
+
+let names=["surendar","arun","arul"];
+console.log(names);
+console.log(names[0]);
+names.forEach(name=>{console.log(name)})
+
+
+names.push("sathya")  // add the element at the last
+console.log(names);
+names.pop();  //delete the element at the last
+console.log(names);
+
+
+
+objects in nodejs
+
+
+let student_details={"name":"surendar","skills":["C","python"]}
+console.log(student_details);
+console.log(student_details["name"]) 
+  // it will through error if not available
+console.log(student_details.name); 
+  //it won't through error but print null if not available
+
+
+
+
+let student_details={"name":"surendar",
+                     "skills":["C","python"],
+                     "address":{"city":"cbe","state":"TN"} 
+                    }
+
+console.log(student_details.skills[1]) //python
+console.log(student_details.address.state) //TN
+
+
+functions in nodejs
+
+syntax:
+
+function funname(parameters)
+{
+ //statement 
+}
+
+//arrow function
+
+variable_name=(parameters)=>{//statements}
+
+//function program
+
+function add(a,b){
+    return a+b;
+}
+console.log(add(10,20));
+
+
+//arrow function
+
+let sub=(a,b)=>{return a-b};
+console.log(sub)
+
+
+1.create object for product_details with 
+name,price,quantity,tags(array) and specialization(dictionary)
+2.Create a arrow function for find area_of_circle(pi*r*r)
+
+
+
+03/09/2026
+
+1.Modules and require
+
+module => separate file which holds user defined function and variables
+          for reusability
+exports => used to export the function or variable to another file
+require => used to import external module to the current
+
+
+math.js => supporting file
+        => module and exports
+
+exp4.js => main file
+        => import math.js file here by using (require)
+
+
+
+
+
+2.callback functions
+     -function inside another function parameter called callback function
+     -will define the follow of the execution of project
+
+function first(name,second){
+   console.log("First function called");
+   console.log(name);
+   second();
+}
+function second(){
+    console.log("second function called");
+}
+first("surendar",second)
+
+
+function getData(callback){
+    let err="db error";  //replace with null
+    let data="surendar";
+    callback(err,data);
+}
+getData((err,data)=>{
+    if(err){
+        console.log(err);
+    }else{
+        console.log(data)
+    }
+})
+
+
+
+
+
+
+10/09/2026
+
+File handling
+ predefined module => fs (file system)
+
+     -read file  (readFile)
+     -write file (writeFile)
+     -append file (appendFile)
+     -create directory (mkdir)
+     -delete directory (rmdir)
+     -delete file (unlink)
+
+
+create new file files.js
+
+create txt file => blog.txt
+
+
+readFile => non blocking code(async)
+
+readFileSync => blocking code
+
+
+
+stream and buffer
+
+let fs=require('fs');
+//read file
+fs.readFile('./blog.txt',(err,data)=>{
+    if(err){
+        console.log(err);
+    }else{
+        console.log(data.toString());
+    }
+});
+
+
+
+
+writeFile 
+   => create new file and write the content
+   => if the file exist it will overwrite the content
+
+appendFile
+   => same as writeFile but here append the content at the end
+
+
+
+fs.appendFile('blog.txt',"\nwelcome to vignan",()=>{
+    console.log("data get appended")
+});
+
+
+fs.mkdir("uploads",(err)=>{
+    if(err){
+        console.log(err);
+    }else{
+        console.log("Folder created");
+    }
+})
+
+existssync() => used to check wheather the folder or file is already exist
+              or not
+
+
+if(fs.existsSync("./logs")){
+ console.log("Folder already exists");
+}
+else
+{
+fs.mkdir("logs",(err)=>{
+    if(err){
+        console.log(err);
+    }else{
+        console.log("Folder created");
+    }
+   })
+}
+
+
+
+
+
+fs.rmdir('./logs',(err)=>{
+    if(err){
+        console.log(err);
+    }else{
+        console.log("folder deleted success");
+    }
+})
+
+//delete the file
+fs.unlink('./blog1.txt',(err)=>{
+    if(err){
+        console.log(err);
+    }else{
+        console.log("file deleted success");
+    }
+})
+
+stream and buffer
+
+let fs=require('fs');
+let readstr=fs.createReadStream('./blog2.txt');
+readstr.on('data',(chunk)=>{
+    console.log("<====new chunk====>");
+    console.log(chunk.toString());
+    console.log("\n\n\n\n\n\n");
+});
+
+
+
+
+
+12/09/2026
+
+creating server in nodejs
+routes
+http methods
+
+
+
+
+create new folder nodejs_server
+                     -app.js
+
+
+predefined module => http
+   -used for communication between UI and server
+   -create a server and run the server
+   -deal with routes and http methods
+
+
+open browser type in url box
+
+localhost:3000/
+
+then press enter
+
+req.url
+
+localhost:3000/login
+  res=> login page called 
+
+localhost:3000/cart
+   res=> cart page called
+
+localhost:3000/orders
+   res=> order page called
+
+
+
+
+nodemon => node monitoring
+
+npm => node package manager
+
+
+in terminal type the below command
+
+npm install -g nodemon
+
+
+after this run the node file by
+
+nodemon app.js
+
+
+localhost:3000/aboutus
+     => aboutus page called
+
+localhost:3000/conductus
+     => conductus page called
+
+
+
+
+
+
+
+17/09/2026
+
+Introduction to expressJs
+routes in expressJS
+
+
+
+those who not created github desktop
+
+create new folder in desktop or D drive
+   folder name => sample_mern_app
+
+
+
+
+
+
+
+
+npm init
+
+npm install express
+
+npm install mongoose
+
+
+
+npm install => it will download all packages from package.json file
+
+
+expressJs
+ -its one of the nodejs framework to create server,routes and api's
+   easily
+
+
+nodejs
+ req.method=="GET" 
+
+app.get()
+app.post()
+
+
+route		purpose		     method
+/addstudent   => inserting record  => post
+
+/getStudents  => fetch students    => get
+
+/updateStudent => update student rec => put
+
+/deleteStudent => del student rec  => delete
+
+localhost:3000/addstudent
+localhost:3000/getStudents
+
+
+
+
+
+
+open browser in new tab in url box
+
+http://localhost:3000/getStudents
+
+http://localhost:3000/addStudent
+
+note:
+  get method only work on browser
+
+remaining methods post,put,delete will work postman tool
+
+open browser
+
+search for postman for windows
+
+after download postman
+
+start install
+
+1st page => continue without account
+2nd page => open lightweight API
+
+
+
+
+
+
