@@ -1567,4 +1567,253 @@ start install
 
 
 
+19/09/2026
+21/09/2026
+24/09/2026
+26/09/2026
+28/09/2026
+
+
+01/10/2026  
+03/10/2026
+05/10/2026
+08/10/2026
+10/10/2026
+12/10/2026
+15/10/2026
+22/10/2026
+
+
+
+
+
+
+15/10/2026
+
+1.Bootstrap integration in react
+2.Forms in react
+
+
+Note:
+  1.open sample_mern_app in vscode from GitHub desktop
+  2. right click hrmgmt_frontend => open in integrated terminal
+
+
+in internet
+
+download any 3 nature images
+
+try to download with same size
+
+once images download
+
+copy and paste in your project folder
+ src => assets
+ 
+after paste images rename images in short
+
+eg:img1,img2
+
+
+Project work
+open your project folder from GitHub desktop
+1.create new react project
+   npm create vite@latest  yourproject name
+eg:
+  npm create vite@latest medisearch
+2.once project created stop the execution
+    cd projectname in your terminal
+3. download the below packages
+      npm install react-router-dom
+      npm install bootstrap
+4. create header & Footer
+5. define menu's for your page
+6. define pages and create pages for your project
+7. configure routing for all the pages
+
+
+
+
+24/10/2026
+
+1.Form in react
+2.Event handling in react
+3.state in react
+
+Note:
+  1.open sample_mern_app in vscode from GitHub desktop
+  2. right click hrmanagement_frontend => open in integrated terminal
+  3.inside src folder => pages folder create two new files
+       1.Register.jsx
+       2.Login.jsx
+
+https://github.com/surendar77/sample_MERN_app_CSE_A
+    => My GitHub link
+
+
+
+
+state
+  => used to communicate between form data to javascript variable
+useState
+  => used to store form data into javascript variable
+
+
+event handling
+    -onChange  => used to record the changes happen in form individual components
+    -onSubmit  => used to collect all the records from form and perform the 
+                  condition
+
+
+
+project work
+ 
+
+
+
+
+
+
+
+
+
+Project work
+open your project folder from GitHub desktop
+1.create new react project
+   npm create vite@latest  yourproject name
+eg:
+  npm create vite@latest medisearch
+2.once project created stop the execution
+    cd projectname in your terminal
+3. download the below packages
+      npm install react-router-dom
+      npm install bootstrap
+4. create header & Footer
+5. define menu's for your page
+6. define pages and create pages for your project
+7. configure routing for all the pages
+
+
+
+
+
+
+
+
+
+
+26/10/2026
+
+Connectivity between frontend(React) and backend(ExpressJs)
+
+Note:
+  1.open sample_mern_app in vscode from GitHub desktop
+  2. right click hrmanagement_frontend => open in integrated terminal
+  3.inside src folder => pages folder create two new files
+       1.Register.jsx
+  4.open mongodb compass and connect it
+
+
+
+
+
+cors 
+  -cross browser scripting error
+  -used to allow request from any url to server
+localhost:5173  => react
+localhost:3000  => expressJs
+localhost:27017 => mongodb
+
+npm install cors
+
+
+
+
+
+
+
+localhost:3000/api/emp/register
+post
+
+name,emailid,password,role(HR,EMPLOYEE)
+
+
+
+
+
+
+
+
+event handling
+
+  -onChange
+  -OnSubmit
+
+
+useState
+   => used to collect data from form to javascript variable
+
+
+
+
+
+
+
+
+
+
+29/10/2026
+
+https://github.com/surendar77/sample_MERN_app_CSE_A
+
+Connecting frontend with backend part-II
+login page and role based menu's on home page
+Note:
+  1.open sample_mern_app in vscode from GitHub desktop
+  2.right click hrmgmt_frontend => open in integrated terminal
+        run frontend also => npm run dev
+  3.open mongodb compass and connect it
+  4.right click index.js => open in integrated terminal then run backend by below command
+ 	nodemon index.js
+inside  src => pages 
+Create 3` new files
+
+HrHome.jsx
+EmpHome.jsx
+AdminHome.jsx
+
+
+
+login page =>AdminHome.jsx => admin@gmail.com && admin
+	   =>EmpHome.jsx => check with database datas then role is employee
+	   =>HrHome.jsx  => check with database datas then role is hr
+
+
+
+
+design your pages using AI(chatgpt)
+
+first 
+
+header.jsx
+
+copy entire code and paste in chatgpt give below prompt
+
+update with attractive and responsive css(bootstrap) for the above code
+
+Note:
+  do same for all the pages
+Footer.jsx,Home,about,contact,login,register,hrhome,adminhome,emphome
+
+
+
+
+
+
+
+
+
+
+
+
 
